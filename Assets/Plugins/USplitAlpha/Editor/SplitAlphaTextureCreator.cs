@@ -21,6 +21,8 @@ namespace USplitAlpha
         private static readonly string Android = "Android";
         private static readonly string iPhone = "iPhone";
 
+        public const float SCALE_SIZE = 0.5f;
+
         private static bool _isRevert = false;
         private static string _currentTexturePath;
 
@@ -212,15 +214,22 @@ namespace USplitAlpha
 
         private static Texture2D _CreateRawAlphaTexture (Texture2D texture)
         {
-            var alphaTexture = new Texture2D (texture.width, texture.height, TextureFormat.RGB24, false);
+            var alphaTexture = new Texture2D ((int)(texture.width * SCALE_SIZE), (int)(texture.height * SCALE_SIZE), TextureFormat.RGB24, false);
             alphaTexture.wrapMode = TextureWrapMode.Clamp;
 
-            var pixels = texture.GetPixels ();
-            for (int i = 0; i < pixels.Length; i++) {
-                var a = pixels [i].a;
-                pixels [i] = new Color (a, a, a);
+            for (int i = 0; i < texture.width; i++)
+            {
+                for (int j = 0; j < texture.height; j++)
+                {
+                    Color color = texture.GetPixel(i, j);
+                    Color rgbColor = color;
+                    Color alphaColor = color;
+                    alphaColor.r = color.a;
+                    alphaColor.g = color.a;
+                    alphaColor.b = color.a;
+                    alphaTexture.SetPixel((int)(i * SCALE_SIZE), (int)(j * SCALE_SIZE), alphaColor);
+                }
             }
-            alphaTexture.SetPixels (pixels);
 
             return alphaTexture;
         }

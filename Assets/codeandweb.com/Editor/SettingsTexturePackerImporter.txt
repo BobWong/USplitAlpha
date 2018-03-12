@@ -1,0 +1,57 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/BundleEditing/Font/art_font1.tpsheet
+- Assets/BundleEditing/UIRes/res_equip.tpsheet
+- Assets/BundleEditing/UIRes/res_item.tpsheet
+- Assets/BundleEditing/UIRes/res_login.tpsheet
+- Assets/BundleEditing/UIRes/res_map.tpsheet
+- Assets/BundleEditing/UIRes/res_menu.tpsheet
+- Assets/BundleEditing/UIRes/res_package.tpsheet
+- Assets/BundleEditing/UIRes/res_partner.tpsheet
+- Assets/BundleEditing/UIRes/res_pet.tpsheet
+- Assets/BundleEditing/UIRes/res_role.tpsheet
+- Assets/BundleEditing/UIRes/res_roleinfo.tpsheet
+- Assets/BundleEditing/UIRes/res_skill.tpsheet
+- Assets/BundleEditing/UIRes/res_ui_common.tpsheet
+- Assets/BundleEditing/UIRes/res_ui_pet.tpsheet
+- Assets/BundleEditing/UIRes/res_ui_sense.tpsheet
+- Assets/BundleEditing/UIRes/res_ui_war.tpsheet
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/BundleEditing/Font/art_font1.png
+- Assets/BundleEditing/UIRes/res_equip.png
+- Assets/BundleEditing/UIRes/res_item.png
+- Assets/BundleEditing/UIRes/res_login.png
+- Assets/BundleEditing/UIRes/Map.png
+- Assets/BundleEditing/UIRes/res_menu.png
+- Assets/BundleEditing/UIRes/Package.png
+- Assets/BundleEditing/UIRes/partner.png
+- Assets/BundleEditing/UIRes/pet.png
+- Assets/BundleEditing/UIRes/role.png
+- Assets/BundleEditing/UIRes/RoleInfo.png
+- Assets/BundleEditing/UIRes/skill.png
+- Assets/BundleEditing/UIRes/res_ui_common.png
+- Assets/BundleEditing/UIRes/res_ui_pet.png
+- Assets/BundleEditing/UIRes/res_ui_sense.png
+- Assets/BundleEditing/UIRes/res_ui_war.png
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0
